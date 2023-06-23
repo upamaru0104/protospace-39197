@@ -11,10 +11,10 @@
 | occupation         | text   | null: false |
 | position           | text   | null: false |
 
-- has_many :phototypes
+- has_many :prototypes
 - has_many :comments
 
-## phototypes テーブル
+## prototypes テーブル
 
 | Column      | Type       | Options           |
 | ----------- | ---------- | ----------------- |
@@ -38,4 +38,4 @@
 |                        | foreign_key: true           |
 
 - belongs_to :user
-- belongs_to :phototypes
+- belongs_to :prototypes
