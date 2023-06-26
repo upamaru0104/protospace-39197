@@ -1,0 +1,9 @@
+class Prototype < ApplicationRecord
+  validates :title, presence: true
+  validates :catch_copy, presence: true
+  validates :concept, presence: true
+  validates :user, presence: true
+
+  has_many :comments
+  belongs_to :user
+end
