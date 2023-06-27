@@ -5,7 +5,7 @@ class Prototype < ApplicationRecord
   validates :user, presence: true
   validates :image, presence: true
 
-  has_many :comments
+  has_many :comments, dependent: :destroy
   belongs_to :user
   has_one_attached :image
 end
