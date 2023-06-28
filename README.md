@@ -34,7 +34,7 @@
 | content   | text       | null: false                 |
 | user      | references | null: false,                |
 |                        | foreign_key: true           |
-| phototype | references | null: false,
+| prototype | references | null: false,
 |                        | foreign_key: true           |
 
 - belongs_to :user
